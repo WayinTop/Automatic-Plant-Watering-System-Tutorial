@@ -13,7 +13,7 @@ void loop() {
   Serial.print("MOISTURE LEVEL:");
   value1 = analogRead(Pin1);
   Serial.println(value1);
-  if(value1>750)
+  if(value1<750) // this value will vary by sensor used
   {
       digitalWrite(IN1, LOW);
   }
